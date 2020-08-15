@@ -9,7 +9,7 @@ A demonstration of the Adaptive Monte Carlo Localization (AMCL) algorithm perfor
 ## Getting Started
 #### Clone repo into catkin workspace:
 ```
-$ git clone git@github.com:mattcotton20/GoChaseIt ~/catkin_ws/src
+$ git clone git@github.com:MattCotton20/WhereAmI ~/catkin_ws/src
 $ cd ~/catkin_ws/
 $ catkin_make
 ```
