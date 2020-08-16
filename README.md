@@ -40,13 +40,22 @@ $ rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 With this terminal highlighted, the robot can now be driven within Gazebo (see prompts for key bindings). As you drive the robot around, the RTAB-Map Viz window will show the map being built, along with identified features and loop closures. Once complete, close the RTAB-Map terminal to save the data to `~/.ros/rtabmap.db`
 
 #### View the generated map:
-To view the generated map, run:
+Run:
 ```
 $ rtabmap-databaseViewer ~/.ros/rtabmap.db
 ```
 Then enable:
 * View -> Constraint View
 * View -> Graph View
+
+#### Localize the robot using the generated map:
+Repeat the steps as before, except in the second terminal, instead run:
+```
+$ cd ~/catkin_ws/
+$ source devel/setup.bash
+$ roslaunch my_robot localization.launch
+```
+Instead of generating a new map, the robot will use the previous map as the 'truth' and localise itself against that.
 
 ## Author
 
