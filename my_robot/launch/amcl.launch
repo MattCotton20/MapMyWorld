@@ -16,10 +16,16 @@
     <param name="initial_pose_y" value="-3.7"/>
     <param name="initial_pose_a" value="0"/>
 
-    <param name="max_particles" value="20000"/>
-    <param name="update_min_d" value="0.05"/>
+    <param name="max_particles" value="500"/>
+    <param name="update_min_d" value="0.025"/>
     <param name="update_min_a" value="0.25"/>
+
     <param name="laser_max_beams" value="30"/>
+
+    <param name="odom_alpha1" value="0.02"/>
+    <param name="odom_alpha2" value="0.02"/>
+    <param name="odom_alpha3" value="0.02"/>
+    <param name="odom_alpha4" value="0.02"/>
   </node>
 
   <!-- Move Base -->
