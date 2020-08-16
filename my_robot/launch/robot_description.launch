@@ -13,5 +13,5 @@
   <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen"/>
 
   <!--launch rviz-->
-  <node name="rviz" pkg="rviz" type="rviz" respawn="false" args="-d /home/workspace/catkin_ws/src/my_robot/config/amcl.rviz"/>
+  <node name="rviz" pkg="rviz" type="rviz" respawn="false" args="-d /home/workspace/catkin_ws/src/my_robot/config/rtab-map.rviz"/>
 </launch>
