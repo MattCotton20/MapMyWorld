@@ -12,8 +12,8 @@
     <color rgba="0.1 0.1 0.1 1"/>
   </material>
 
-  <material name="light_gray">
-    <color rgba="0.5 0.5 0.5 1"/>
+  <material name="white">
+    <color rgba="1 1 1 1"/>
   </material>
 
   <link name="robot_footprint"></link>
@@ -38,16 +38,16 @@
     </inertial>
 
     <collision name='chassis_collision'>
-      <origin xyz="0.05 0 0" rpy=" 0 0 0"/> 
+      <origin xyz="0.025 0 0" rpy=" 0 0 0"/> 
       <geometry>
-        <box size=".25 .2 .08"/>
+        <box size=".3 .2 .08"/>
       </geometry>
     </collision>
 
     <visual name='chassis_visual'>
-      <origin xyz="0.05 0 0" rpy=" 0 0 0"/> 
+      <origin xyz="0.025 0 0" rpy=" 0 0 0"/> 
       <geometry>
-        <box size=".25 .2 .08"/>
+        <box size=".3 .2 .08"/>
       </geometry>
       <material name="red"/>
     </visual>
@@ -64,22 +64,22 @@
       <geometry>
         <box size=".1 .1 .1"/>
       </geometry>
-      <material name="light_gray"/>
+      <material name="white"/>
     </visual>
 
     <collision name='back_caster_collision'>
-      <origin xyz="-0.025 0 -0.05" rpy=" 0 0 0"/>
+      <origin xyz="-0.075 0 -0.05" rpy=" 0 0 0"/>
       <geometry>
         <sphere radius="0.0499"/>
       </geometry>
     </collision>
 
     <visual name='back_caster_visual'>
-      <origin xyz="-0.025 0 -0.05" rpy=" 0 0 0"/>
+      <origin xyz="-0.075 0 -0.05" rpy=" 0 0 0"/>
       <geometry>
         <sphere radius="0.05"/>
       </geometry>
-      <material name="light_gray"/>
+      <material name="white"/>
     </visual>
 
     <collision name='front_caster_collision'>
@@ -94,7 +94,7 @@
       <geometry>
         <sphere radius="0.05"/>
       </geometry>
-      <material name="light_gray"/>
+      <material name="white"/>
     </visual>
 
   </link>
