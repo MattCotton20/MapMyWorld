@@ -35,7 +35,7 @@ In a third terminal, run:
 ```
 $ cd ~/catkin_ws/
 $ source devel/setup.bash
-$ rosrun teleop_twist_keyboard teleop_twist_keyboard.py
+$ roslaunch my_robot teleop.launch
 ```
 With this terminal highlighted, the robot can now be driven within Gazebo (see prompts for key bindings). As you drive the robot around, the RTAB-Map Viz window will show the map being built, along with identified features and loop closures. Once complete, close the RTAB-Map terminal to save the data to `~/.ros/rtabmap.db`
 
